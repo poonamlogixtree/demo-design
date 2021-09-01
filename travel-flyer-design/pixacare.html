@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pixacare Bootstrap</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style type="text/css">
+  	.navbar-toggler {
+    	color: #000;
+    	border-color: #000;
+	}
+	.navbar-toggler-icon {
+	    background-image: url(navigation-icon.svg);
+	}
+  	.navbar{
+	    padding: 0;
+	}
+	a.navbar-brand {
+	   margin: 0px 91px 0px 0px;
+	    padding: 0;
+	}
+	.navbar-collapse.d-flex {
+	    align-items: center;
+	    margin-bottom: 3px;
+	}
+	.logo{
+		margin-left: 18px;
+	}
+	.navbar .nav-link {
+	    padding: 10px 20px!important;
+	}
+	a.nav-link {
+	    color: #343a40;
+	    font-size: 14px;
+	    font-weight: 700;
+	}
+	
+	a.connexion-btn {
+	    background: #dc3545;
+	    color: #fff;
+	    font-size: 14px;
+	    padding: 9px 21px;
+	    border-radius: 5px;
+	    text-decoration: none;
+	}
+	
+	header#header {
+	    padding: 70px 0px;
+	}
+	.b-text {
+	    padding: 130px 0 0px;
+	}
+	img.shape-img {
+	    position: absolute;
+	    left: -14%;
+	    top: -114%;
+	    right: auto;
+	    bottom: auto;
+	    z-index: 1;
+	    width: 269px;
+	    height: auto;
+	    max-width: 15.7vw;
+	}
+	#header .col-lg-7 h1 {
+		font-size: 49px;
+		font-weight: 700;
+		letter-spacing: 2px;
+		line-height: 55px;
+	}
+	span.phone {
+	    color: #dc3545;
+	}
+	#header .col-lg-5 img {
+	   
+	}
+	#header .col-lg-7 a {
+	    background: #e02c23;
+	    color: #fff;
+	   	padding: 15px 30px;
+    	border-radius: 5px;
+    	display: inline-block;
+    	font-size: 18px;
+	}
+	#header .col-lg-7 a:hover{
+		text-decoration: none;
+	}
+	.info-btn{
+	}
+	.chat {
+    	float: right;
+    	position: fixed;
+	    visibility: visible;
+	    opacity: 1;
+	    z-index: 996;
+	    right: 15px;
+	    bottom: 15px;
+	}
+	.chat a {
+	    background: darkblue;
+	    border-radius: 50%;
+	    width: 53px;
+	    height: 54px;
+	    display: inline-flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	
+	i.bi.bi-chat-square-fill {
+	    font-size: 25px;
+	    color: #fff;
+	}
+	section.sec-1 {
+	    padding: 25px 0px;
+	}
+	.bg-lightpink {
+	    background-color: #EEF1F6;
+	}
+	.col-12 p {
+	    margin: 0;
+	    padding: 10px;
+	    font-size: 17px;
+	    font-weight: 500;
+	}
+	section.sec-2 {
+	    padding: 70px 0px;
+	}
+	.sec-2 .col-sm-5 img {
+	    margin-top: -15px;
+	}
+	.sec-2 .photo-info:hover , .sec-2 .photo-info.selected{
+		background-color: #FFEAE9;
+    	border-radius: 5px;
+	}
+	.Photographiez h3 {
+	    font-size: 33px;
+	    font-weight: 700;
+	    margin-bottom: 20px;
+	}
+	.photo-info {
+	    text-align: center;
+	    margin-bottom: 30px;
+	    padding: 30px 15px;
+	    border-radius: 5px;
+	}
+	.photo-info h4 {
+	    font-size: 17px;
+	    font-weight: 600;
+	    color: #0f2c43;
+	}
+	.sec-2 .col-md-6 p {
+    	font-size: 14px;
+	}
+	section.sec-3 {
+	    padding: 70px 0px;
+	}
+	.Valorisez h3 {
+	    font-size: 34px;
+	    font-weight: 700;
+	    margin-bottom: 20px;
+	}
+	.sec-3 .col-md-6 p {
+    	font-size: 14px;
+	}
+	.sec-3 .col-sm-5 img {
+	    margin-top: 13px;
+	}
+	.sec-3 .photo-info:hover , .sec-3 .photo-info.selected{
+		background-color: #FFEAE9;
+    	border-radius: 5px;
+    }
+	section.sec-4 {
+	    padding: 70px 0px;
+	}
+	.sec-4 .télésurveillance h3 {
+	    font-size: 33px;
+	    font-weight: 700;
+	    line-height: 33px;
+	    margin-bottom: 20px;
+	}
+	.sec-4 .tele-section{
+	    margin-bottom: 20px;
+	    padding: 20px 0px;
+	    border: 1px solid #FCEBEB;
+	    border-radius: 4px;
+	    box-shadow: 0px 1px 1px #f7eded;
+	}
+	.sec-4 .tele-section p{
+		text-align: center;
+	}
+	.télésurveillance {
+	    margin-top: 30px;
+	}
+	.télésurveillance h3 {
+	    font-size: 33px;
+	    font-weight: 700;
+	    margin-bottom: 20px;
+	}
+	section.sec-5 {
+	    padding: 70px 0px;
+	}
+	.la-pixa {
+	    margin-top: 30px;
+	}
+	.la-pixa h3 {
+	    font-size: 33px;
+	    font-weight: 700;
+	    margin-bottom: 20px;
+	}
+	.la-pixa p {
+	    font-size: 18px;
+	}
+	section.sec-6 {
+	    padding: 0px;
+	}
+	.bg-pink {
+	    background-color: #E7EBEE;
+	}
+	.owl-carousel .owl-item img{
+		display: block;
+    	margin: 0 auto;
+    	width: auto;
+    	max-height: 10vh;
+	}
+	.owl-carousel .owl-stage {
+	  display: flex;
+	  align-items: center;
+	}
+
+	.owl-carousel .caption {
+	  text-align: center;
+	}
+	.item-wrap {
+	    margin-top: 25px;
+	    filter: grayscale(100%);
+	}
+	.item-wrap:hover {
+	    filter: grayscale(0);
+	}
+	section.sec-7 {
+	    padding: 70px 0px;
+	}
+	.col-sm-5 img {
+	    margin-top: 40px;
+	}
+	.col-sm-7 h3 {
+	    font-size: 34px;
+	    font-weight: 700;
+	}
+	.php-email-form {
+	    margin-top: 30px;
+	}
+	.php-email-form button {
+	    padding: 12px 62px;
+	    font-size: 19px;
+	    border-radius: 5px;
+	    background-color: #1A3954;
+	    color: #fff;
+	    border: 1px solid #1A3954;
+	}
+	.php-email-form input, .php-email-form textarea {
+	    font-size: 17px;
+	    border: none;
+	}
+	.php-email-form input:focus, .php-email-form textarea:focus{
+		border: 1px solid #919176;
+    	border-radius: 0;
+		box-shadow: none;
+	}
+	footer.footer {
+	    padding: 20px 0px;
+	}
+	.footer-top {
+	    border-bottom: 1px solid #E7E9EB;
+	}
+	.col-10 p {
+	    color: #919192;
+	}
+	.social-links {
+	    margin-bottom: 6px;
+	}
+	a.facebook {
+	    font-size: 20px;
+	    display: inline-flex;
+	    color: #fff;
+	    background-color: #4267B2;
+	    width: 36px;
+	    height: 36px;
+	    justify-content: center;
+	    align-items: center;
+	    border-radius: 50%;
+	}
+	a.facebook:hover{
+		text-decoration: none;
+	}
+	a.linkedin {
+	    font-size: 20px;
+	    display: inline-flex;
+	    color: #fff;
+	    background-color: #00ACEE;
+	    width: 36px;
+	    height: 36px;
+	    justify-content: center;
+	    align-items: center;
+	    border-radius: 50%;
+	}
+	a.linkedin:hover{
+		text-decoration: none;
+	}
+	a.footer-link {
+	    color: #919192;
+	    text-decoration: none;
+	}
+	.copyright {
+	    margin-top: 15px;
+	}
+	.copyright p {
+	    color: #919192;
+	}
+	@media only screen and (max-width:576px) {
+	 .info {
+	    text-align: center;
+	}
+	.text-sm-center {
+		text-align: center;
+	}
+	.Photographiez h3 {
+	    text-align: center;
+	}
+	.Valorisez h3 {
+		 text-align: center;
+	}
+	.télésurveillance h3 {
+		 text-align: center;
+	}
+	.la-pixa h3 {
+		 text-align: center;
+	}
+	.col-sm-7 h3 {
+		 text-align: center;
+	}
+}
+	@media (min-width: 576px){
+	.text-md-center {
+		text-align: center;
+	}
+}
+	@media (min-width: 768px){
+	.text-md-center {
+		text-align: center;
+	}
+}
+	@media (max-width: 992px){
+	
+}
+	@media (min-width: 992px){
+	.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+	    flex-wrap: nowrap;
+	}
+	.text-md-left{
+		text-align: left;
+	}
+	.text-lg-center{
+		text-align: center;
+	}
+	.pl-lg-5{
+	    padding-left: 3rem;
+	}
+	.pr-lg-0{
+		padding-right: 0;
+	}
+	.header{
+		height: 100vh;
+	}
+}
+  </style>
+	</head>
+<body>
+<div class="fixed-top">
+	<nav class="navbar navbar-expand-lg justify-content-between bg-white py-4">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="left-transparent.svg" alt="logo" class="logo img-fluid" style="width: 280px">
+			</a>
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsiblenavbar">
+				<i class="bi bi-list"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsiblenavbar">
+				<ul class="navbar-nav">
+					<li class="navbar-item">
+						<a class="nav-link" href="#sec-2">CAPTATION</a>
+					</li>
+					<li class="navbar-item">
+						<a class="nav-link" href="#sec-3">ANALYSE</a>
+					</li>
+					<li class="navbar-item">
+						<a class="nav-link" href="#sec-4">TELESURVEILLANCE</a>
+					</li>
+					<li class="navbar-item">
+						<a class="nav-link" href="#sec-5">EQUIPE</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#" class="connexion-btn">CONNEXION</a>
+			<img src="hero_shape.svg" alt="hero_shape" class="shape-img">
+		</div>
+	</nav>
+</div>
+	<header id="header" class="header">
+		<div class="container">
+			<div class="row b-text align-items-center justify-content-center">
+				<div class="col-lg-7 col-sm-12">
+					<div class="info text-lg-left text-md-center">
+						<h1 class="mb-4">
+							Nous transformons<br>
+							la <span class="phone">camera du smartphone</span><br>
+							en <span class="phone">dispositif medical</span>
+						</h1>
+						<div class="info-btn">
+							<a href="#">Je veux une demonstration</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-sm-12 pl-lg-5 pr-lg-0 text-sm-center text-lg-center text-md-center">
+						<img src="Screenshot_2.png" class="img-fluid" style="width:400px;">
+				</div>
+			</div>
+			<div class="chat ">
+				<a href="#" class="back-to-top active">
+					<i class="bi bi-chat-square-fill"></i>
+				</a>
+			</div>
+		</div>
+	</header>
+	<section class="sec-1 bg-lightpink">
+		<div class="container-fluid ">
+			<div class="row text-center">
+				<div class="col-12 col-sm-6 col-md-4">
+					<p>HDS</p>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<p>Intelligence Artificielle</p>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4">
+					<p>Marquage CE</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sec-2" id="sec-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 text-sm-center">
+						<img src="Screenshot_3.png" class="img-fluid" style="width:450px;">
+				</div>
+				<div class="col-sm-7 justify-content-center">
+					<div class="Photographiez mt-5">
+						<h3>Photographiez vos patients</h3>
+						<div class="row ">
+							<div class="col-sm-12 col-md-6">
+								<div class="photo-info selected">
+									<h6>Identification Patient</h6>
+									<p>Scan intelligent de l'identité et
+									du consentement du patient.</p>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6">
+								<div class="photo-info">
+									<h6>Mot-Cles</h6>
+									<p>Annotation facilitée et
+									personnalisable.</p>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6">
+								<div class="photo-info">
+									<h6>Phototheque Intelligente</h6>
+									<p>Accès sécurisé aux données
+									structurées.</p>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6">
+								<div class="photo-info">
+									<h6>Communication</h6>
+									<p>Partage d'images et messagerie
+									sécurisée.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sec-3" id="sec-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7 justify-content-center">
+					<div class="Valorisez mt-5">
+						<h3>Valorisez vos données</h3>
+						<div class="row">
+							<div class="col-sm-12 col-md-6">
+								<div class="photo-info selected">
+									<h6>Collaboration</h6>
+									<p>Optimisation des réunions médicales et de la recherche clinique.</p>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6">
+								<div class="photo-info">
+									<h6>Intelligence Artificielle</h6>
+									<p>Analyse d'images à base de Deep Learning</p>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6">
+								<div class="photo-info">
+									<h6>Aide à la décision</h6>
+									<p>Apport d'informations complémentaires facilitant la prise en charge.</p>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-6">
+								<div class="photo-info">
+									<h6>Interoperabilité</h6>
+									<p>Respect des normes FHIR, HL7 et Snomed CT.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5 text-sm-center">
+							<img src="Screenshot_4.png" class="img-fluid" style="width:427px;">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sec-4" id="sec-4">
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-sm-7 text-sm-center">
+						<img src="Screenshot_5.png" class="img-fluid" style="width:585px;">
+				</div>
+				<div class="col-sm-5 justify-content-center">
+					<div class="télésurveillance">
+						<h3>Télésurveillance & Téléexpertise des plaies chroniques & post-opératoires</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="tele-section">
+									<p>Optimisation du parcours patient</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="tele-section">
+									<p>Favorisation de l'Hospitalisation à Domicile</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="tele-section">
+									<p>Gestion des complications post-opératoires (ISO)</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="tele-section">
+									<p>Système d'alertes automatisées</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sec-5" id="sec-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="la-pixa">
+						<h3>La Pixa Team</h3>
+						<p>2018. Hacking Health Camp. Trois passionnés.<br>
+						<br>
+						Pixacare est créé en 2019 suite à la rencontre entre un professeur de
+						médecine, un entrepreneur et un ingénieur au Hacking Health Camp
+						édition 2018<br>
+						<br>
+						L'équipe se dédie désormais à une simple obsession : permettre aux
+						professionnels de santé d'utiliser la caméra de leur smartphone pour le
+						soin.<br>
+						<br>
+						La société compte 7 personnes et est localisée au centre de Strasbourg.<br>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-5 text-sm-center">
+					<img src="Screenshot_6.png" class="img-fluid" style="width: 448px">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sec-6 bg-pink">
+		<div class="container-fluid">
+			<div class="owl-carousel cm-slider1">
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="Isocele (1).png" alt="Isocele" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="microsoft.png" alt="microsoft" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="Region_Grand_Est.png" alt="Region_Grand_Est" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="semia.png" alt="semia" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="techcare.png" alt="techcare" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="ugap.jpg" alt="ugap" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="uni_strasbourg.png" alt="uni_strasbourg" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="ARS.png" alt="ARS" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="bpi.png" alt="bpi" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="cfi.png" alt="cfi" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="chu_strasbourg.png" alt="chu_strasbourg" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="Conectus.png" alt="Conectus" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="EFOR.png" alt="EFOR" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="e-meuse-sante.png" alt="e-meuse-sante" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="FBVL.png" alt="FBVL" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="icube.png" alt="icube" class="img-fluid">
+					</div>
+				</div>
+				<div class="item-wrap">
+					<div class="slide-item">
+						<img src="phast.png" alt="phast" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="sec-7">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-sm-5 text-sm-center">
+					<img src="Screenshot_13.png" class="img-fluid" style="width: 400px;">
+				</div>
+				<div class="col-lg-6 col-sm-7">
+					<h3>Nous contacter</h3>
+					<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+						<div class="form-group">
+							<input type="text" class="form-control" name="prénom" id="prénom" placeholder="Prénom" required="">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="nom" id="nom" placeholder="Nom" required="">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" name="email" id="email" placeholder="Adresse Email" required="">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="organisation" id="organisation" placeholder="Organisation / Entreprise" required="">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="sujet" id="sujet" placeholder="Sujet" required="">
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="message" rows="3" placeholder="Message" required=""></textarea>
+						</div>
+						<div class="text-center">
+							<button type="submit">Envoyer</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 mt-4">
+						<img src="Screenshot_14.png"  class="img-fluid" style="width: 155px;">
+						<p>11 rue de l'académie<br>
+						67000 STRASBOURG</p>
+						<div class="social-links">
+							<a href="#" class="facebook">
+								<i class="bx bxl-facebook"></i>
+							</a>
+							<a href="#" class="linkedin">
+								<i class="bx bxl-linkedin"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-4">
+						<h5>Pixacare</h5>
+						<p>A Propos<br>
+						Dossier Presse</p>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-4">
+						<h5>Légal</h5>
+						<p>Mentions Légales<br>
+						CGVU</p>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-4">
+						<h5>Support</h5>
+						<p>contact@ <a href="#" class="footer-link">pixacare.com</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright text-center">
+				<p>Pixacare © 2020 - Tous droits réservés</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+		$('.cm-slider1').owlCarousel({
+		    loop:true,
+		    margin:3,
+		    responsiveClass:true,
+		    autoplay:true,
+		    autoplayTimeout:3000,
+		    autoplayHoverPause:true,
+		    items:1,
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:true
+		        },
+		        600:{
+		            items:3,
+		            nav:false
+		        },
+		        1000:{
+		            items:6,
+		            nav:false,
+		          
+		        }
+		    }
+		})
+	});
+</script>
+</body>
+</html>
